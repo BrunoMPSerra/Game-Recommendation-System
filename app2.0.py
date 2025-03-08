@@ -17,7 +17,7 @@ kmeans = model_data["kmeans"]  # Load K-Means model
 df_games = model_data["df_games"]  # Load dataset
 
 # Configure Gemini AI
-genai.configure(api_key="AIzaSyAE1VszQ4sE_WoQXu6FoUOF7vkJFQLoWVE")
+genai.configure(api_key="INPUT YOUR API KEY HERE")
 
 
 # ------------------------------- FUNCTIONS -------------------------------
@@ -81,7 +81,7 @@ def rank_games_by_similarity(user_query, filtered_games, game_embeddings, bert_m
 
     return ranked_games[["title", "summary", "similarity"]]
 
-YOUTUBE_API_KEY = "AIzaSyCBo6cGlt-MuvYlkzBpo0oa8DrzPdaA3I4"
+YOUTUBE_API_KEY = "INPUT YOUR API KEY HERE"
 
 def get_youtube_trailer(game_title):
     """Fetch the first YouTube trailer using YouTube Data API."""
